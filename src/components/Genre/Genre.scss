@@ -26,6 +26,12 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 48rem) {
+    .genre-image {
+        width:  36%
+    }
+}
+
 @media (max-width: 30rem) {
     .genre-image{
         width: 40%;

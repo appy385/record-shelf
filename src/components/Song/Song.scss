@@ -44,14 +44,15 @@
 
 }
 
+@media (max-width: 48rem) {
+    .song-card {
+        width:  38%
+    }
+}
 @media (max-width: 30rem) {
     .song-card{
         width: 100%;
     }
 }
-@media (max-width: 48rem) {
-    .song-card {
-        width:  35%
-    }
-}
+
 
