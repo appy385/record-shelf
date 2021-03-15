@@ -25,3 +25,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media (max-width: 30rem) {
+    .genre-image{
+        width: 40%;
+    }
+}
