@@ -73,6 +73,8 @@ const songShape = PropTypes.shape({
     name: PropTypes.string.isRequired,
   }).isRequired,
   publishedAt: PropTypes.string.isRequired,
+  count: PropTypes.number.isRequired,
+  like: PropTypes.bool.isRequired,
 });
 
 Genre.propTypes = {
