@@ -17,6 +17,5 @@ describe(App.name, () => {
     const syncButton = screen.getByText('Sync');
     fireEvent.click(syncButton);
     expect(document.location.href).toBe('http://localhost/songs');
-    screen.getByText('Music');
   });
 });
