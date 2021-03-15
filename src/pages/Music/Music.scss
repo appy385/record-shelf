@@ -1,7 +1,11 @@
 .music {
     margin: 6rem;
 }
-.music-allsongs {
+.music-header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.music-header-message{
     font-size: 3rem;
     font-weight: 700;
 }

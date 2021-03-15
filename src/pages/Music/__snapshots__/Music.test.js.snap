@@ -5,11 +5,21 @@ exports[`Music should match snapshot 1`] = `
   <div
     class="music"
   >
-    <span
-      class="music-allsongs"
+    <div
+      class="music-header-container"
     >
-      All Songs
-    </span>
+      <span
+        class="music-header-message"
+      >
+        All Songs
+      </span>
+      <input
+        alt="text"
+        class="music-toggle-button"
+        src="icon-genre.svg"
+        type="image"
+      />
+    </div>
     <div
       class="music-container"
     >
