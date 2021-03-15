@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` shoudl match snapshot 1`] = `
+exports[`App shoudl match snapshot 1`] = `
 <div>
   <div
     class="app-container"
@@ -14,12 +14,16 @@ exports[` shoudl match snapshot 1`] = `
       <span>
         Seems a bit empty in here...
       </span>
-      <button
-        class="sync-button"
-        type="button"
+      <a
+        href="/songs"
       >
-        Sync
-      </button>
+        <button
+          class="sync-button"
+          type="button"
+        >
+          Sync
+        </button>
+      </a>
     </div>
   </div>
 </div>
