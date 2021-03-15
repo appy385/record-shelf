@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { trackPromise } from 'react-promise-tracker';
 import { getSongs, getLikes, updateLike } from '../../utils/api';
 import Song from '../../components/Song/Song';
 import iconGenre from '../../assets/icon-genre.svg';
@@ -12,15 +13,15 @@ const Music = () => {
   const [genreSongs, setGenreSongs] = useState({});
   const [isGenre, setIsGenre] = useState(false);
   useEffect(async () => {
-    const songList = await getSongs();
-    const newSongList = await Promise.all(songList.data.map(async (song) => {
+    const songList = await trackPromise(getSongs());
+    const newSongList = await trackPromise(Promise.all(songList.data.map(async (song) => {
       const response = await getLikes(song.id);
       return {
         ...song,
         like: response.data.like,
         count: response.data.count,
       };
-    }));
+    })));
     const newGenreSongs = groupByGenre(newSongList);
     setGenreSongs(newGenreSongs);
     setSongs(newSongList);
