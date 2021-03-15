@@ -49,4 +49,9 @@
         width: 100%;
     }
 }
+@media (max-width: 48rem) {
+    .song-card {
+        width:  35%
+    }
+}
 
