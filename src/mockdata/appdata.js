@@ -5,6 +5,8 @@ export const mockSongData = {
   id: '08d7e81e-1c34-4a60-a70c-2ec11c8a6687',
   name: 'Gone, Gone, Gone',
   publishedAt: '2013-01-01T00:00:00',
+  count: 3,
+  like: false,
 };
 
 export const mockSongsArray = [
