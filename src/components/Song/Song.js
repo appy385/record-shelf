@@ -26,14 +26,14 @@ Song.propTypes = {
     id: PropTypes.string.isRequired,
     albumArtUrl: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    artist: PropTypes.objectOf(PropTypes.shape({
-      id: PropTypes.number,
+    artist: PropTypes.shape({
+      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-    })).isRequired,
-    genre: PropTypes.objectOf(PropTypes.shape({
-      id: PropTypes.number,
+    }).isRequired,
+    genre: PropTypes.shape({
+      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-    })).isRequired,
+    }).isRequired,
     publishedAt: PropTypes.string.isRequired,
   }).isRequired,
 
