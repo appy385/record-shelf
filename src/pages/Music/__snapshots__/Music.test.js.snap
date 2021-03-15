@@ -3,7 +3,33 @@
 exports[`Music shoudl match snapshot 1`] = `
 <div>
   <div
-    class="music-container"
-  />
+    class="music"
+  >
+    <span
+      class="music-allsongs"
+    >
+      All Songs
+    </span>
+    <div
+      class="music-container"
+    />
+  </div>
+</div>
+`;
+
+exports[`Music should match snapshot 1`] = `
+<div>
+  <div
+    class="music"
+  >
+    <span
+      class="music-allsongs"
+    >
+      All Songs
+    </span>
+    <div
+      class="music-container"
+    />
+  </div>
 </div>
 `;
