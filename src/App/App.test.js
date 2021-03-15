@@ -1,11 +1,10 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from './App';
 
 describe('', () => {
-  test('renders learn react link', () => {
-    render(<App />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+  test('shoudl match snapshot', () => {
+    const { container } = render(<App />);
+    expect(container).toMatchSnapshot();
   });
 });

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` shoudl match snapshot 1`] = `
+<div>
+  <div
+    class="app-container"
+  >
+    <div
+      class="sync-container"
+    >
+      <span>
+        :((
+      </span>
+      <span>
+        Seems a bit empty in here...
+      </span>
+      <button
+        class="sync-button"
+        type="button"
+      >
+        Sync
+      </button>
+    </div>
+  </div>
+</div>
+`;
