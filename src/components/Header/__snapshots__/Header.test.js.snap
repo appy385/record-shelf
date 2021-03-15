@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match snapshot for theme light 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <a
+      href="/"
+    >
+      <span
+        class="header-shelf"
+      >
+        My
+      </span>
+      <span
+        class="header-shelf"
+      >
+        <strong>
+          Record
+        </strong>
+      </span>
+      <span
+        class="header-shelf"
+      >
+        Shelf
+      </span>
+    </a>
+  </div>
+</div>
+`;
