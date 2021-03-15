@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getSongs } from '../../utils/api';
+import { getSongs, getLikes, updateLike } from '../../utils/api';
 import Song from '../../components/Song/Song';
 import iconGenre from '../../assets/icon-genre.svg';
 import iconGrid from '../../assets/icon-grid.svg';
@@ -11,12 +11,35 @@ const Music = () => {
   const [songs, setSongs] = useState([]);
   const [genreSongs, setGenreSongs] = useState({});
   const [isGenre, setIsGenre] = useState(false);
+  const [isUpdate, setIsUpdate] = useState(false);
   useEffect(async () => {
     const songList = await getSongs();
-    const newGenreSongs = groupByGenre(songList.data);
+    const newSongList = await Promise.all(songList.data.map(async (song) => {
+      const response = await getLikes(song.id);
+      return {
+        ...song,
+        like: response.data.like,
+        count: response.data.count,
+      };
+    }));
+    const newGenreSongs = groupByGenre(newSongList);
     setGenreSongs(newGenreSongs);
-    setSongs(songList.data);
+    setSongs(newSongList);
   }, []);
+
+  const handleLike = async (id, value) => {
+    await updateLike(id, value);
+    const newSongs = songs.map((song) => ({
+      ...song,
+      like: (song.id === id) ? value : song.like,
+      count: ((song.id !== id) ? song.count
+        : ((song.id === id && value)
+          ? song.count + 1 : song.count - 1)),
+
+    }));
+    setSongs(newSongs);
+  };
+
   const toggle = () => {
     setIsGenre(!isGenre);
   };
@@ -29,7 +52,7 @@ const Music = () => {
             <input type="image" className="music-toggle-button" onClick={toggle} src={iconGrid} alt="text" />
           </div>
           <div className="music-container">
-            <Genre genreSongs={genreSongs} />
+            <Genre genreSongs={genreSongs} handleLike={handleLike} />
           </div>
         </>
       )
@@ -40,7 +63,7 @@ const Music = () => {
               <input type="image" className="music-toggle-button" onClick={toggle} src={iconGenre} alt="text" />
             </div>
             <div className="music-container">
-              {songs.map((song) => (<Song key={song.id} song={song} />))}
+              {songs.map((song) => (<Song key={song.id} song={song} handleLike={handleLike} />))}
             </div>
           </>
         )}
