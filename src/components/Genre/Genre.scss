@@ -1,0 +1,27 @@
+.genre-category {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+.genre-image-container {
+    display: flex;
+}
+.genre-image-name {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: solid 1px black;
+    background-color: #4C63AA;
+    box-shadow: 0 0.25rem 0.25rem 0 #9a9a9a;
+    align-self: center;
+    border-radius: 1.5rem;
+
+}
+.genre-image {
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: calc((100% - (8 * 0.5rem + 10*1rem)) / 5);
+}
+.genre-row {
+    display: flex;
+    flex-wrap: wrap;
+}
