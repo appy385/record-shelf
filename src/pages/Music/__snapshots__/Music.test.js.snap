@@ -1,22 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Music shoudl match snapshot 1`] = `
-<div>
-  <div
-    class="music"
-  >
-    <span
-      class="music-allsongs"
-    >
-      All Songs
-    </span>
-    <div
-      class="music-container"
-    />
-  </div>
-</div>
-`;
-
 exports[`Music should match snapshot 1`] = `
 <div>
   <div
@@ -29,7 +12,98 @@ exports[`Music should match snapshot 1`] = `
     </span>
     <div
       class="music-container"
-    />
+    >
+      <div
+        class="song-card"
+        data-testid="song-card"
+      >
+        <img
+          alt="song"
+          class="song-image"
+          src="https://i.scdn.co/image/ab67616d0000b273dc1f496d2a8d75f7fda092b6"
+        />
+        <div
+          class="song-container"
+        >
+          <div>
+            <div
+              class="song-name"
+            >
+              Aankh Marey (From Simmba)
+            </div>
+            <div
+              class="song-artist"
+            >
+              Neha Kakkar
+            </div>
+          </div>
+          <div
+            class="song-image-container"
+          >
+            <input
+              alt="text"
+              class="song-heart-button"
+              src="heart-gray.svg"
+              type="image"
+            />
+            <div
+              class="song-likes"
+            >
+              <span
+                class="song-like-count"
+              >
+                0
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="song-card"
+        data-testid="song-card"
+      >
+        <img
+          alt="song"
+          class="song-image"
+          src="https://i.scdn.co/image/ab67616d0000b273d9009cc16eddbc6664508cd8"
+        />
+        <div
+          class="song-container"
+        >
+          <div>
+            <div
+              class="song-name"
+            >
+              Gone, Gone, Gone
+            </div>
+            <div
+              class="song-artist"
+            >
+              Phillip Phillips
+            </div>
+          </div>
+          <div
+            class="song-image-container"
+          >
+            <input
+              alt="text"
+              class="song-heart-button"
+              src="heart-gray.svg"
+              type="image"
+            />
+            <div
+              class="song-likes"
+            >
+              <span
+                class="song-like-count"
+              >
+                0
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
