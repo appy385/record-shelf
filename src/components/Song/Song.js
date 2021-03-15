@@ -13,8 +13,8 @@ const Song = ({ song, handleLike }) => (
         <div className="song-artist">{song.artist.name}</div>
       </div>
       <div className="song-image-container">
-        {(song.like) ? <input type="image" className="song-heart-button" src={heartRed} alt="text" onClick={() => handleLike(song.id, !song.like)} />
-          : <input type="image" className="song-heart-button" src={heartGray} alt="text" onClick={() => handleLike(song.id, !song.like)} />}
+        {(song.like) ? <input type="image" data-testid="red-heart" className="song-heart-button" src={heartRed} alt="text" onClick={() => handleLike(song.id, !song.like)} />
+          : <input type="image" className="song-heart-button" data-testid="gray-heart" src={heartGray} alt="text" onClick={() => handleLike(song.id, !song.like)} />}
         <div className="song-likes">
           <span className="song-like-count">{song.count}</span>
         </div>

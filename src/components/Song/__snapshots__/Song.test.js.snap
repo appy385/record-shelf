@@ -32,6 +32,7 @@ exports[`Song shoudld match snapshot 1`] = `
         <input
           alt="text"
           class="song-heart-button"
+          data-testid="gray-heart"
           src="heart-gray.svg"
           type="image"
         />
@@ -41,7 +42,7 @@ exports[`Song shoudld match snapshot 1`] = `
           <span
             class="song-like-count"
           >
-            0
+            3
           </span>
         </div>
       </div>
