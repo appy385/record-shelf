@@ -23,4 +23,13 @@ export const mockgetSongsApi = {
 
 };
 
-export const newData = {};
+export const mockLikeData = {
+  data: {
+    data: {
+      count: 3,
+      like: false,
+    },
+
+  },
+
+};

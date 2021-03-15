@@ -17,6 +17,8 @@ export const mockSongsArray = [
     id: '08d7e81e-1c34-4a60-a70c-2ec11c8a6687',
     name: 'Gone, Gone, Gone',
     publishedAt: '2013-01-01T00:00:00',
+    count: 3,
+    like: false,
   },
   {
     albumArtUrl: 'https://i.scdn.co/image/ab67616d0000b273d9009cc16eddbc6664508cd8',
@@ -25,6 +27,8 @@ export const mockSongsArray = [
     id: '08d7e81e-1c34-4a60-a70c-2ec11c8a6687',
     name: 'Gone, Gone, Gone',
     publishedAt: '2013-01-01T00:00:00',
+    count: 3,
+    like: false,
   },
 
 ];
@@ -38,6 +42,8 @@ export const mockResultSongByCatgeory = {
       id: '08d7e81e-1c34-4a60-a70c-2ec11c8a6687',
       name: 'Gone, Gone, Gone',
       publishedAt: '2013-01-01T00:00:00',
+      count: 3,
+      like: false,
     },
     {
       albumArtUrl: 'https://i.scdn.co/image/ab67616d0000b273d9009cc16eddbc6664508cd8',
@@ -46,6 +52,8 @@ export const mockResultSongByCatgeory = {
       id: '08d7e81e-1c34-4a60-a70c-2ec11c8a6687',
       name: 'Gone, Gone, Gone',
       publishedAt: '2013-01-01T00:00:00',
+      count: 3,
+      like: false,
     },
   ],
 };
@@ -59,6 +67,8 @@ export const mockSongsByCategory = {
       id: '08d7e81e-1c34-4a60-a70c-2ec11c8a6687',
       name: 'Gone, Gone, Gone',
       publishedAt: '2013-01-01T00:00:00',
+      count: 3,
+      like: false,
     },
   ],
   Bollywoord: [
@@ -69,6 +79,8 @@ export const mockSongsByCategory = {
       id: '0a150e00-ef4e-4304-9a07-6a66892bfc7c',
       name: 'Illegal Weapon 2.0 (From Street Dancer 3D)',
       publishedAt: '2020-01-04T00:00:00',
+      count: 3,
+      like: false,
     },
   ],
 
