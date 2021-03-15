@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import getSongs from './api';
+import { getSongs } from './api';
 
 import { mockgetSongsApi } from '../mockdata/apidata';
 
