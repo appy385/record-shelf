@@ -3,14 +3,16 @@ import {
   render, screen, act, waitFor,
 } from '@testing-library/react';
 import Music from './Music';
-import { getSongs } from '../../utils/api';
-import { mockgetSongsApi } from '../../mockdata/apidata';
+import { getSongs, getLikes, updateLike } from '../../utils/api';
+import { mockgetSongsApi, mockLikeData } from '../../mockdata/apidata';
 
 jest.mock('../../utils/api');
 
 describe(Music.name, () => {
   beforeEach(() => {
     getSongs.mockResolvedValue(mockgetSongsApi.data);
+    getLikes.mockResolvedValue(mockLikeData.data);
+    updateLike.mockResolvedValue();
   });
   afterEach(() => {
     jest.clearAllMocks();
