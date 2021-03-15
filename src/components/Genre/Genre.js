@@ -7,7 +7,7 @@ import Country from '../../assets/genre-country.png';
 import Pop from '../../assets/genre-pop.png';
 import Rock from '../../assets/genre-rock.png';
 
-const Genre = ({ genreSongs }) => {
+const Genre = ({ genreSongs, handleLike }) => {
   const renderSwitch = (param) => {
     switch (param) {
       case 'Bollywood': return (
@@ -51,7 +51,7 @@ const Genre = ({ genreSongs }) => {
             {renderSwitch(genre)}
             <div className="genre-row" data-testid="genre-row">
               {genreSongs[genre].map((song) => (
-                <Song key={song.id} song={song} />))}
+                <Song key={song.id} song={song} handleLike={handleLike} />))}
             </div>
           </div>
         </React.Fragment>
@@ -77,6 +77,7 @@ const songShape = PropTypes.shape({
 
 Genre.propTypes = {
   genreSongs: PropTypes.objectOf(PropTypes.arrayOf(songShape)).isRequired,
+  handleLike: PropTypes.func.isRequired,
 
 };
 
