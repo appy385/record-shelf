@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Song shoudld match snapshot 1`] = `
+<div>
+  <div
+    class="song-card"
+    data-testid="song-card"
+  >
+    <img
+      alt="song"
+      class="song-image"
+      src="https://i.scdn.co/image/ab67616d0000b273d9009cc16eddbc6664508cd8"
+    />
+    <div
+      class="song-container"
+    >
+      <div>
+        <div
+          class="song-name"
+        >
+          Gone, Gone, Gone
+        </div>
+        <div
+          class="song-artist"
+        >
+          Phillip Phillips
+        </div>
+      </div>
+      <div
+        class="song-image-container"
+      >
+        <input
+          alt="text"
+          class="song-heart-button"
+          src="heart-gray.svg"
+          type="image"
+        />
+        <div
+          class="song-likes"
+        >
+          <span
+            class="song-like-count"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

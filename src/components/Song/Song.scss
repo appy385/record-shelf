@@ -1,0 +1,46 @@
+.song-card {
+    width: calc((100% - (8 * 0.5rem + 10*1rem)) / 3);
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background-color: #DFDFDF;
+    box-shadow: 0 0.25rem 0.5rem 0 #9a9a9a;
+}
+.song-image{
+    border-radius: 50%;
+    width: 60%;
+    margin: auto;
+}
+.song-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.song-name {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.5rem 0 0 0.5rem;
+}
+
+.song-artist {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0 0 0 0.5rem;
+}
+
+.song-image-container {
+    position: relative;
+    display: inline-block;
+}
+.song-heart-button {
+
+}
+
+.song-like-count {
+    // z-index: 100;
+    position: absolute;
+    // margin: 0 auto;
+}
