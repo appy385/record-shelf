@@ -44,3 +44,16 @@
     position: absolute;
     // margin: 0 auto;
 }
+
+@media (max-width: 30rem) {
+    .song-card{
+        width: 100%;
+    }
+}
+
+// @media (max-width: 48rem) {
+//     .song-card {
+//         // width:  calc((100% - (4 * 0.5rem + 3 * 1rem)) / 2);
+//         width: calc((100% - (8 * 0.5rem + 8*1rem)) / 2);
+//     }
+// }
