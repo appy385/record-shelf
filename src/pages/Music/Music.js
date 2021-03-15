@@ -11,7 +11,6 @@ const Music = () => {
   const [songs, setSongs] = useState([]);
   const [genreSongs, setGenreSongs] = useState({});
   const [isGenre, setIsGenre] = useState(false);
-  const [isUpdate, setIsUpdate] = useState(false);
   useEffect(async () => {
     const songList = await getSongs();
     const newSongList = await Promise.all(songList.data.map(async (song) => {
@@ -37,6 +36,8 @@ const Music = () => {
           ? song.count + 1 : song.count - 1)),
 
     }));
+    const newGenreSongs = groupByGenre(newSongs);
+    setGenreSongs(newGenreSongs);
     setSongs(newSongs);
   };
 
