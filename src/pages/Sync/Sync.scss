@@ -3,10 +3,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    border: 1px solid black;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 40%;
 }
 
-// .sync-button {
-//     align-self: center;
-// }
+.sync-button {
+    color: white;
+    background-color: #4C63AA;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.sync-text {
+    font-size: 2rem;
+}
